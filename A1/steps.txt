@@ -1,0 +1,48 @@
+
+
+
+void solve(int row, int col, StringBuilder[] rowStr, StringBuilder[] colStr)
+          switch(board[row][col]){
+            case '+' :
+              for(char c = 'a'; c <= z; c++){
+                if isValid(c, row, col){
+                  //append c to rowStr[row] and colStr[c]
+                  if at bottom right, print solution and exit
+                  else solve(nextCoords, rowStr, colStr)
+                  //delete last character of rowStr[row] and colStr[col]
+                  }
+              }
+              break;
+
+            case '-':
+              //append '-' to rowstr[row] and colstr[col]
+              if at bottom right, print solution and exit
+              else solve (nextCoords, rowStr, colStr)
+              // delete last character or rowStr[row] and colstr[col]
+              break;
+
+              default:
+                if isValid(board[row][col], row, col){
+                if at bottom right, print solution and exit
+                else solve(nextCoords, rowStr, colStr
+                //delete last character of rowStr[row] and colStr[col]
+
+                }
+              }
+
+
+
+isValid -->
+  check if word at last square or if squares next to it are '-'
+  check if prefix if not at edge
+  case one --> at last position i == size and j == size{
+      check if row is word and col is word
+
+  }
+  case 2: at the rightmost col{
+  check if row is word and col is prefix
+
+
+
+  }case 3:
+  check if col is word and 
